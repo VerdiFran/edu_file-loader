@@ -1,0 +1,23 @@
+.container {
+  margin: auto;
+}
+
+.uploadButton {
+  width: 160px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #8fc5f8;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #81bcf5;
+  }
+}
+
+.fileInput {
+  display: none;
+}

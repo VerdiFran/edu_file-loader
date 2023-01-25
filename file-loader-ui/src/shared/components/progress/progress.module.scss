@@ -1,0 +1,47 @@
+.container {
+  width: 300px;
+  padding: 20px 0;
+  display: grid;
+  grid-template-areas:
+    'filename progress'
+    'bar progress';
+  grid-template-columns: auto 40px;
+  grid-template-rows: 20px 6px;
+  align-items: end;
+}
+
+.fileName {
+  grid-area: filename;
+  margin: 0 0 4px;
+  font-size: 12px;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.progress {
+  height: 100%;
+  background-color: #0569ec;
+  transition: width 0.3s, background-color 0.3s;
+
+  &Bar {
+    grid-area: bar;
+    height: 6px;
+    margin-right: 4px;
+    background-color: #ededff;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  &Percentage {
+    grid-area: progress;
+    margin: 0;
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  &Success {
+    background-color: #7bb720;
+  }
+}
